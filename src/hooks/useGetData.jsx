@@ -10,7 +10,7 @@ function useGetData(id) {
   const getData = async () => {
     setLoading(true);
     try {
-      const response = await fetch(API);
+      const response = await fetch(id ? API + "/" + id : API);
       if (!response.ok) {
         throw new Error("Qandaydir xatolik bor!");
       }
