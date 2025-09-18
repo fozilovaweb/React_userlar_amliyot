@@ -16,7 +16,7 @@ function App() {
           element: <Home />,
         },
         {
-          path: "/about",
+          path: "/about/:id",
           element: <About />,
         },
         {

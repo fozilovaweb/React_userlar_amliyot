@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const API = "https://jsonplaceholder.typicode.com/users";
 
-function useGetData() {
+function useGetData(id) {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
