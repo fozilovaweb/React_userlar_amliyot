@@ -1,6 +1,12 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+@layer base {
+  #root {
+    @apply min-h-screen flex flex-col;
+  }
+}
+
 @layer utilities {
   .container {
     @apply mx-auto;

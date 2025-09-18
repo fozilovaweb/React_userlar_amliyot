@@ -27,7 +27,7 @@ function useGetData() {
     getData();
   }, []);
 
-  return <div></div>;
+  return { data, error, loading };
 }
 
 export default useGetData;

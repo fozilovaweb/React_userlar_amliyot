@@ -1,15 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Sitenav from "./Sitenav";
 
 function Header() {
   return (
-    <div class="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-base-100 shadow-sm">
       <div className="container flex">
-        <div class="flex-1">
-          <Link class="btn btn-ghost text-xl" to={"/"}>
+        <div className="flex-1">
+          <Link className="btn btn-ghost text-xl" to={"/"}>
             User name
           </Link>
         </div>
+        <Sitenav />
       </div>
     </div>
   );
